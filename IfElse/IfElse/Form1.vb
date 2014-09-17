@@ -11,9 +11,16 @@ Public Class Form1
         num1 = CDbl(st1)
         num2 = CDbl(st2)
 
-        ' Your code here
+        If num1 > num2 Then
+            largerNum = num1
+        Else
+            largerNum = num2
+        End If
+        txtResult.Text = "The larger number is " & largernum
 
-        txtResult.Text = "Not implemented yet"
     End Sub
 
+    Private Sub txtFirstNum_TextChanged(sender As Object, e As EventArgs) Handles txtFirstNum.TextChanged
+
+    End Sub
 End Class
